@@ -1,189 +1,308 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta name="description"
-          content="ICMLA '22: Scrape, Cut, Paste and Learn: Automated Dataset Generation Applied to Parcel Logistics">
-    <meta name="keywords" content="Scrape, Cut, Paste and Learn">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Scrape, Cut, Paste and Learn: Automated Dataset Generation Applied to Parcel Logistics</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="ICMLA '22: Scrape, Cut, Paste and Learn: Automated Dataset Generation Applied to Parcel Logistics"
+    />
+    <meta name="keywords" content="Scrape, Cut, Paste and Learn" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      Scrape, Cut, Paste and Learn: Automated Dataset Generation Applied to
+      Parcel Logistics
+    </title>
 
-    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-          rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="./static/css/bulma.min.css">
-    <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
-    <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
-    <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-    <link rel="stylesheet"
-          href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-    <link rel="stylesheet" href="./static/css/index.css">
-    <link rel="icon" href="./static/images/favicon.svg">
+    <link rel="stylesheet" href="./static/css/bulma.min.css" />
+    <link rel="stylesheet" href="./static/css/bulma-carousel.min.css" />
+    <link rel="stylesheet" href="./static/css/bulma-slider.min.css" />
+    <link rel="stylesheet" href="./static/css/fontawesome.all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"
+    />
+    <link rel="stylesheet" href="./static/css/index.css" />
+    <link rel="icon" href="./static/images/favicon.svg" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script defer src="./static/js/fontawesome.all.min.js"></script>
     <script src="./static/js/bulma-carousel.min.js"></script>
     <script src="./static/js/bulma-slider.min.js"></script>
     <script src="./static/js/index.js"></script>
-</head>
-<body>
-
-
-<section class="hero">
-    <div class="hero-body">
+  </head>
+  <body>
+    <section class="hero">
+      <div class="hero-body">
         <div class="container is-max-desktop">
-            <div class="columns is-centered">
-                <div class="column has-text-centered">
-                    <h1 class="title is-1 publication-title">Scrape, Cut, Paste and Learn</h1>
-                    <h1 class="title is-2 publication-title">Automated Dataset Generation Applied to Parcel
-                        Logistics</h1>
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <h1 class="title is-1 publication-title">
+                Scrape, Cut, Paste and Learn
+              </h1>
+              <h1 class="title is-2 publication-title">
+                Automated Dataset Generation Applied to Parcel Logistics
+              </h1>
 
+              <div class="is-size-5 publication-authors">
+                <span class="author-block">
+                  <a href="https://a-nau.github.io">Alexander Naumann</a
+                  ><sup>1,2</sup>,
+                </span>
+                <span class="author-block">
+                  <a href="https://www.fzi.de/team/felix-hertlein/"
+                    >Felix Hertlein</a
+                  ><sup>1</sup>,
+                </span>
+                <span class="author-block">
+                  <a
+                    href="https://www.ifl.kit.edu/english/staff_benchun_zhou.php"
+                    >Benchun Zhou</a
+                  ><sup>2</sup>,
+                </span>
+                <span class="author-block">
+                  <a href="https://www.fzi.de/team/laura-doerr/">Laura Dörr</a
+                  ><sup>1,2</sup>
+                </span>
+                <span class="author-block">
+                  and
+                  <a
+                    href="https://www.ifl.kit.edu/english/staff_kai_furmans.php"
+                    >Kai Furmans</a
+                  ><sup>1,2</sup>
+                </span>
+              </div>
 
-                    <div class="is-size-5 publication-authors">
-                        <span class="author-block">
-                          <a href="https://a-nau.github.io">Alexander Naumann</a><sup>1,2</sup>,
-                        </span>
-                        <span class="author-block">
-                          <a href="https://www.fzi.de/team/felix-hertlein/">Felix Hertlein</a><sup>1</sup>,
-                        </span>
-                        <span class="author-block">
-                          <a href="https://www.ifl.kit.edu/english/staff_benchun_zhou.php">Benchun Zhou</a><sup>2</sup>,
-                        </span>
-                        <span class="author-block">
-                          <a href="https://www.fzi.de/team/laura-doerr/">Laura Dörr</a><sup>1,2</sup>
-                        </span>
-                        <span class="author-block">
-                          and <a
-                                href="https://www.ifl.kit.edu/english/staff_kai_furmans.php">Kai Furmans</a><sup>1,2</sup>
-                        </span>
-                    </div>
+              <div class="is-size-6 publication-authors">
+                <span class="author-block"
+                  ><sup>1</sup>&nbsp;FZI Research Center for Information
+                  Technology, Karlsruhe, Germany,</span
+                >
+                <span class="author-block"
+                  ><sup>2</sup>&nbsp;Institute for Material Handling and
+                  Logistics, Karlsruhe Institute of Technology (KIT), Karlsruhe,
+                  Germany</span
+                >
+              </div>
 
-                    <div class="is-size-6 publication-authors">
-                        <span class="author-block"><sup>1</sup>&nbsp;FZI Research Center for Information Technology, Karlsruhe, Germany,</span>
-                        <span class="author-block"><sup>2</sup>&nbsp;Institute for Material Handling and Logistics, Karlsruhe Institute of Technology (KIT), Karlsruhe, Germany</span>
-                    </div>
-
-                    <div class="column has-text-centered">
-                        <div class="publication-links">
-                            <!-- PDF Link. -->
-<!--                            <span class="link-block">-->
-<!--                                <a href="" class="external-link button is-normal is-rounded is-dark">-->
-<!--                                  <span class="icon">-->
-<!--                                      <i class="fas fa-file-pdf"></i>-->
-<!--                                  </span>-->
-<!--                                  <span>Paper (tbd)</span>-->
-<!--                                </a>-->
-<!--                              </span>-->
-                            <span class="link-block">
-                            <a href="https://arxiv.org/abs/2210.09814"
-                               class="external-link button is-normal is-rounded is-dark">
-                              <span class="icon">
-                                  <i class="ai ai-arxiv"></i>
-                              </span>
-                              <span>arXiv</span>
-                            </a>
-                          </span>
-                            <!-- Code Link. -->
-                            <span class="link-block">
-                            <a href="https://github.com/a-nau/easy-image-scraping"
-                               class="external-link button is-normal is-rounded is-dark">
-                              <span class="icon">
-                                  <i class="fab fa-github"></i>
-                              </span>
-                              <span>Scraping</span>
-                              </a>
-                          </span>
-                            <span class="link-block">
-                            <a href=""
-                               class="external-link button is-normal is-rounded is-dark">
-                              <span class="icon">
-                                  <i class="fab fa-github"></i>
-                              </span>
-                              <span>Composition (tbd)</span>
-                              </a>
-                          </span>
-                            <span class="link-block">
-                            <a href=""
-                               class="external-link button is-normal is-rounded is-dark">
-                              <span class="icon">
-                                  <i class="fab fa-github"></i>
-                              </span>
-                              <span>CNN (tbd)</span>
-                              </a>
-                          </span>
-                        </div>
-                    </div>
+              <div class="column has-text-centered">
+                <div class="publication-links">
+                  <!-- PDF Link. -->
+                  <!--                            <span class="link-block">-->
+                  <!--                                <a href="" class="external-link button is-normal is-rounded is-dark">-->
+                  <!--                                  <span class="icon">-->
+                  <!--                                      <i class="fas fa-file-pdf"></i>-->
+                  <!--                                  </span>-->
+                  <!--                                  <span>Paper (tbd)</span>-->
+                  <!--                                </a>-->
+                  <!--                              </span>-->
+                  <span class="link-block">
+                    <a
+                      href="https://arxiv.org/abs/2210.09814"
+                      class="external-link button is-normal is-rounded is-dark"
+                    >
+                      <span class="icon">
+                        <i class="ai ai-arxiv"></i>
+                      </span>
+                      <span>arXiv</span>
+                    </a>
+                  </span>
+                  <!-- Code Link. -->
+                  <span class="link-block">
+                    <a
+                      href="https://github.com/a-nau/easy-image-scraping"
+                      class="external-link button is-normal is-rounded is-dark"
+                    >
+                      <span class="icon">
+                        <i class="fab fa-github"></i>
+                      </span>
+                      <span>Scraping</span>
+                    </a>
+                  </span>
+                  <span class="link-block">
+                    <a
+                      href="https://github.com/a-nau/synthetic-dataset-generation"
+                      class="external-link button is-normal is-rounded is-dark"
+                    >
+                      <span class="icon">
+                        <i class="fab fa-github"></i>
+                      </span>
+                      <span>Dataset Generation</span>
+                    </a>
+                  </span>
+                  <span class="link-block">
+                    <a
+                      href=""
+                      class="external-link button is-normal is-rounded is-dark"
+                    >
+                      <span class="icon">
+                        <i class="fab fa-github"></i>
+                      </span>
+                      <span>CNN (tbd)</span>
+                    </a>
+                  </span>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<section class="section">
-    <div class="container is-max-desktop">
+    <section class="section">
+      <div class="container is-max-desktop">
         <!-- Abstract. -->
         <div class="columns is-centered has-text-centered">
-            <div class="column is-four-fifths">
-                <h2 class="title is-3">Abstract</h2>
-                <div class="content has-text-justified">
-                    <p>
-                        State-of-the-art approaches in computer vision heavily rely on sufficiently large training
-                        datasets. For real-world applications, obtaining such a dataset is usually a tedious task. In
-                        this paper, we present a fully automated pipeline to generate a synthetic dataset for instance
-                        segmentation in four steps. In contrast to existing work, our pipeline covers every step from
-                        data acquisition to the final dataset. We first scrape images for the objects of interest from
-                        popular image search engines and since we rely only on text-based queries the resulting data
-                        comprises a wide variety of images. Hence, image selection is necessary as a second step. This
-                        approach of image scraping and selection relaxes the need for a real-world domain-specific
-                        dataset that must be either publicly available or created for this purpose. We employ an
-                        object-agnostic background removal model and compare three different methods for image
-                        selection: Object-agnostic pre-processing, manual image selection and Convolutional Neural
-                        Network-based image selection. In the third step, we generate random arrangements of the object
-                        of interest and distractors on arbitrary backgrounds. Finally, the composition of the images is
-                        done by pasting the objects using four different blending methods. We present a case study for
-                        our dataset generation approach by considering parcel segmentation. For the evaluation we
-                        created a dataset of parcel photos that were annotated automatically. We find that (1) our
-                        dataset generation pipeline allows a successful transfer to real test images (Mask AP 86.2), (2)
-                        a very accurate image selection process - in contrast to human intuition - is not crucial and a
-                        broader category definition can help to bridge the domain gap, (3) the usage of blending methods
-                        is beneficial compared to simple copy-and-paste. We made our full code for scraping, image
-                        composition and training publicly available at
-                        <a href="https://a-nau.github.io/parcel2d">https://a-nau.github.io/parcel2d</a>.
-                    </p>
-                </div>
-                <p>
-                    <img src="static/images/overview.png" width="80%"/>
-                </p>
-            </div>
+          <div class="column is-four-fifths">
+            <div class="content has-text-justified"></div>
+            <p>
+              <img src="static/images/overview.png" width="80%" />
+              <br />
+              <span style="font-size: small">
+                <b>Figure</b>: Summary of our dataset creation process, for
+                which all code is publicly available.
+              </span>
+              <br />
+            </p>
+          </div>
         </div>
+        <div class="column is-centered">
+          <h2 class="title is-2">Compontents</h2>
+          <p>Our work has 4 code components, described below.</p>
+          <br />
+          <h4 class="title is-4">
+            Image Scraping
+            <a href="https://github.com/a-nau/easy-image-scraping">
+              &nbsp;<img
+                src="https://img.shields.io/github/stars/a-nau/easy-image-scraping?style=social"
+              />
+            </a>
+          </h4>
+          <div class="content has-text-justified">
+            First you need to gather potential relevant images. If your object
+            of interest appears frequently in image search results, feel free to
+            test our image scraping tool. It supports
+            <ul>
+              <li>Google Images</li>
+              <li>Bing Images</li>
+              <li>Baidu Images</li>
+              <li>Yahoo Images</li>
+            </ul>
 
+            <div class="columns is-centered has-text-centered">
+              <img
+                src="https://github.com/a-nau/easy-image-scraping/raw/main/data/misc/demo.gif"
+                width="80%"
+              />
+            </div>
+            <br />
+          </div>
+          <h4 class="title is-4">
+            Image Selection
+            <a href="https://github.com/a-nau/image-selection-and-cnn-training">
+              &nbsp;<img
+                src="https://img.shields.io/github/stars/a-nau/image-selection-and-cnn-training?style=social"
+              />
+            </a>
+          </h4>
+          <div class="content has-text-justified">
+            This repository helps you to
+            <ul>
+              <li>automatically remove the background of images</li>
+              <li>pre-select images (based on general criteria)</li>
+              <li>crop images</li>
+              <li>generate split files for training</li>
+            </ul>
+          </div>
+          <br />
 
-    </div>
-    <footer class="footer">
+          <h4 class="title is-4">
+            Dataset Generation
+            <a href="https://github.com/a-nau/synthetic-dataset-generation">
+              &nbsp;<img
+                src="https://img.shields.io/github/stars/a-nau/synthetic-dataset-generation?style=social"
+              />
+            </a>
+          </h4>
+          <div class="content has-text-justified">
+            Once you have an image pool consisting of objects of interest,
+            distractor objects and background images, you can generate your own
+            dataset! This repository is a modified (and extended) version of
+            <a href="https://github.com/debidatta/syndata-generation"
+              >debidatta/syndata-generation
+            </a>
+            and supports
+            <ul>
+              <li>
+                easy configuration of image composition (number of objects,
+                degree of occlusion)
+              </li>
+              <li>augementation (rotation and scaling)</li>
+              <li>different blending methods</li>
+            </ul>
+            <div class="columns is-centered has-text-centered">
+              <img
+                src="https://github.com/a-nau/synthetic-dataset-generation/raw/main/data/misc/overview_composition.png"
+                width="80%"
+              />
+            </div>
+          </div>
+          <br />
+
+          <h4 class="title is-4">
+            CNN Training
+            <a href="https://github.com/a-nau/image-selection-and-cnn-training">
+              &nbsp;<img
+                src="https://img.shields.io/github/stars/a-nau/image-selection-and-cnn-training?style=social"
+              />
+            </a>
+          </h4>
+          <div class="content has-text-justified">
+            Once you created your dataset, you probably want to test it as well.
+            This repo contains
+            <ul>
+              <li>Notebooks for dataset visualization</li>
+              <li>(Tested) code for training with Detectron2</li>
+              <li>Evaluation routines</li>
+              <li>Notebook for qualitative evaluation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
         <div class="container">
-            <div class="content has-text-centered">
-                <a class="icon-link" href="https://arxiv.org/abs/2210.09814" class="external-link" disabled>
-                    <i class="fas fa-file-pdf"></i>
-                </a>
-                <a class="icon-link" href="" class="external-link" disabled>
-                    <i class="fab fa-github"></i>
-                </a>
+          <div class="content has-text-centered">
+            <a
+              class="icon-link"
+              href="https://arxiv.org/abs/2210.09814"
+              class="external-link"
+              disabled
+            >
+              <i class="fas fa-file-pdf"></i>
+            </a>
+            <a class="icon-link" href="" class="external-link" disabled>
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+          <div class="columns is-centered">
+            <div class="column is-8">
+              <div class="content">
+                <p style="text-align: center">
+                  This website template is borrowed from
+                  <a href="https://github.com/nerfies/nerfies.github.io"
+                    >https://nerfies.github.io</a
+                  >
+                </p>
+                <p style="text-align: center">© Alexander Naumann, 2022</p>
+              </div>
             </div>
-            <div class="columns is-centered">
-                <div class="column is-8">
-                    <div class="content">
-                        <p style="text-align: center">
-                            This website template is borrowed from <a
-                                href="https://github.com/nerfies/nerfies.github.io">https://nerfies.github.io</a>
-                        </p>
-                        <p style="text-align: center">
-                            © Alexander Naumann, 2022
-                        </p>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-    </footer>
-</section>
-</body>
+      </footer>
+    </section>
+  </body>
 </html>
