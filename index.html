@@ -200,6 +200,60 @@
                     </ul>
                 </div>
                 <br />
+                <h4 class="title is-4">
+                    Dataset Generation
+                    <a href="https://github.com/a-nau/synthetic-dataset-generation">
+                        &nbsp;<img
+                            src="https://img.shields.io/github/stars/a-nau/synthetic-dataset-generation?style=social" />
+                    </a>
+                </h4>
+                <div class="content has-text-justified">
+                    Once you have an image pool consisting of objects of interest,
+                    distractor objects and background images, you can generate your own
+                    dataset! This repository is a modified (and extended) version of
+                    <a href="https://github.com/debidatta/syndata-generation">debidatta/syndata-generation
+                    </a>
+                    and supports
+                    <ul>
+                        <li>
+                            easy configuration of image composition (number of objects,
+                            degree of occlusion, ...)
+                        </li>
+                        <li>augmentation (rotation and scaling)</li>
+                        <li>different blending methods</li>
+                    </ul>
+                    <div class="columns is-centered has-text-centered">
+                        <img src="https://github.com/a-nau/synthetic-dataset-generation/raw/main/data/misc/overview_composition.png"
+                            width="80%" />
+                    </div>
+                </div>
+                <br />
+
+                <h4 class="title is-4">
+                    CNN Training
+                    <a href="https://github.com/a-nau/image-selection-and-cnn-training">
+                        &nbsp;<img
+                            src="https://img.shields.io/github/stars/a-nau/image-selection-and-cnn-training?style=social" />
+                    </a>
+                </h4>
+                <div class="content has-text-justified">
+                    Once you created your dataset, you probably want to test it as well.
+                    This repo contains
+                    <ul>
+                        <li>
+                            <a
+                                href="https://github.com/a-nau/image-selection-and-cnn-training/blob/main/src/notebooks/detectron_dataset_visualization.ipynb">Notebook</a>
+                            for dataset visualization
+                        </li>
+                        <li>(Tested) code for training with Detectron2</li>
+                        <li>Evaluation routines</li>
+                        <li>
+                            <a
+                                href="https://github.com/a-nau/image-selection-and-cnn-training/blob/main/src/notebooks/detectron_qualitative_evaluation.ipynb">Notebook</a>
+                            for qualitative evaluation
+                        </li>
+                    </ul>
+                </div>
 
     </section>
     <section class="section" id="BibTeX">
